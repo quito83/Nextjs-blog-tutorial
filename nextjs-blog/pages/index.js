@@ -6,24 +6,24 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>QuitoApps</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Learn <Link href="/posts/first-post">Next.js!</Link>
+          Welcome to <a href="https://quito.ar">QuitoApps!</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Get started ... <code>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <Link href="/posts/first-post" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          </Link>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h3>Learn &rarr;</h3>
@@ -31,7 +31,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
           >
             <h3>Examples &rarr;</h3>
@@ -56,7 +56,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Made with{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
@@ -93,8 +93,15 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          font-family:
+            Menlo,
+            Monaco,
+            Lucida Console,
+            Liberation Mono,
+            DejaVu Sans Mono,
+            Bitstream Vera Sans Mono,
+            Courier New,
+            monospace;
         }
       `}</style>
 
@@ -103,8 +110,17 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+          font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            Fira Sans,
+            Droid Sans,
+            Helvetica Neue,
             sans-serif;
         }
         * {
@@ -112,5 +128,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
